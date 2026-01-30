@@ -8,25 +8,23 @@ namespace GameProgrammingII_Interfaces_LucasHardy
 {
     internal class RandomMoveStrategy : IMoveStrategy
     {
-        public Position EnemyMove(Position currentEnemyPos, Position currentPlayerPos)
+        public Position OnEnemyMove(Position currentEnemyPos, Position currentPlayerPos)
         {
             Random random = new Random();
-            random.Next(0, 4);
-
-
-            if (random.Next() == 0)
+            int randomValue = random.Next(0, 4);
+            if (randomValue == 0)
             {
                 currentEnemyPos._x++;
             }
-            else if (random.Next() == 1)
+            else if (randomValue == 1)
             {
                 currentEnemyPos._x--;
             }
-            else if (random.Next() == 2)
+            else if (randomValue == 2)
             {
                 currentEnemyPos._y++;
             }
-            else if (random.Next() == 3)
+            else if (randomValue == 3)
             {
                 currentEnemyPos._y--;
             }

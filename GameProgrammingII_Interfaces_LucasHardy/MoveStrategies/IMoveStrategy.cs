@@ -8,12 +8,7 @@ namespace GameProgrammingII_Interfaces_LucasHardy
 {
     internal interface IMoveStrategy
     {
-        Position Move(Position currentPosition)
-        {
-            Ene
-
-            return currentPosition;
-        }
+        Position OnEnemyMove(Position currentEnemyPosition, Position currentPlayerPosition);
 
     }
 }

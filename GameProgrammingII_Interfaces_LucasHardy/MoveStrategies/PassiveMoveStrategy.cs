@@ -8,7 +8,7 @@ namespace GameProgrammingII_Interfaces_LucasHardy
 {
     internal class PassiveMoveStrategy : IMoveStrategy
     {
-        public Position EnemyMove(Position currentEnemyPos, Position currentPlayerPos)
+        public Position OnEnemyMove(Position currentEnemyPos, Position currentPlayerPos)
         {
 
             if (currentEnemyPos._x < currentPlayerPos._x)
