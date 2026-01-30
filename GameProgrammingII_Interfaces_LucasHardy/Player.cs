@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace GameProgrammingII_Interfaces_LucasHardy
 {
-    internal class Player(Position startPosition, ConsoleColor playerColor)
+    internal class Player
     {
-        public ConsoleColor _playerColor = ConsoleColor.Green;
-        public Position _playerPosition = new Position();
+        public static ConsoleColor _playerColor = ConsoleColor.Green;
+        public static Position _playerPosition = new Position(0,0);
 
-        playerColor = _playerColor;
+        public Player(Position position, ConsoleColor consoleColor)
+        {
+
+            _playerPosition._x = position._x;
+            _playerPosition._y = position._y;
+            _playerColor = consoleColor;
+        }
+
+        public Player player = new Player(_playerPosition, _playerColor);
     }
 }

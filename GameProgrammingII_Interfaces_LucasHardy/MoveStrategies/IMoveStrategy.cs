@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace GameProgrammingII_Interfaces_LucasHardy
 {
-    public struct Position
+    internal interface IMoveStrategy
     {
-        public int _x;
-        public int _y;
-
-        public Position(int x, int y)
+        Position Move(Position currentPosition)
         {
-            _x = x;
-            _y = y;
+            Ene
+
+            return currentPosition;
         }
+
     }
 }
